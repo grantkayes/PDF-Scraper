@@ -4,7 +4,7 @@ import xlrd
 from xlutils.copy import copy
 
 #open and copy Excel sheet
-rb = xlrd.open_workbook('BeneFix Small Group Plans upload template.xlsx')
+rb = xlrd.open_workbook('insert Excel to be loaded here')
 wb = copy(rb)
 w_sheet = wb.get_sheet(0)
 
@@ -139,6 +139,6 @@ overallFileHandling(120, 45 * 5, 'para07.txt')
 overallFileHandling(120, 45 * 6, 'para08.txt')
 overallFileHandling(120, 45 * 7, 'para09.txt')
 
-wb.save('BeneFix Small Group Plans upload template.xlsx')
+wb.save('insert name of Excel sheet')
 
  
