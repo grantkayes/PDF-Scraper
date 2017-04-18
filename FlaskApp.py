@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 
 def hello():
-    cmd = ["sh", "Benefix.sh"]
+    cmd = ["sh", "insert shell script here]
     p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.PIPE,
                          stdin = subprocess.PIPE)
     out,err = p.communicate()
